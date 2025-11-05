@@ -2,68 +2,145 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gosia — Página de ejemplo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Empresa</title>
+
+  <!-- Estilos: asegúrate de que el archivo real está en css/styles.css o cambia la ruta -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Lottie Files -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="/">Gosia</a>
-      <button id="menuBtn" class="menu-btn" aria-expanded="false">☰</button>
-      <ul id="navList" class="nav-list">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+
+  <!--====== Start Profile One ======-->
+  <div class="profile">
+    <div class="container">
+      <div class="profile-content">
+        <div class="profile-card">
+          <div class="profile-card-wrapper">
+
+            <div class="card-header bg_cover"
+                 style="background-image: url('images/flores.jfif');">
+            </div>
+
+            <div class="card-profile">
+              <img src="images/perfil.jfif" alt="Profile" />
+            </div>
+
+            <div class="card-content text-center rounded-buttons">
+              <h3 class="card-title">Małgorzata Warych</h3>
+              <p class="text">
+                Mi novio es el mejor del mundo porque me hizo esta pagina web.
+              </p>
+            </div>
+
+          </div> <!-- profile-card-wrapper -->
+        </div> <!-- profile-card -->
+      </div> <!-- profile-content -->
+    </div> <!-- container -->
+  </div>
+  <!--====== End Profile One ======-->
+
+  <!-- Íconos sociales fijos -->
+  <div class="top-social">
+    <a href="https://www.instagram.com/ser_y_hablar?igsh=MTRtOWtwZmlocXI3eg==" target="_blank" rel="noopener">
+      <i class="fab fa-instagram"></i>
+      <p class="social-text">@instagram</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@ser_y_hablar?_r=1&_t=ZN-919gaQifgc2" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" class="tiktok" />
+      <p class="social-text">@TikTok</p>
+    </a>
+
+    <a href="https://www.facebook.com/tuusuario" target="_blank" rel="noopener">
+      <i class="fab fa-facebook"></i>
+      <p class="social-text">@facebook</p>
+    </a>
+
+    <!-- Ejemplo animación Lottie -->
+    <lottie-player
+      src="https://assets3.lottiefiles.com/packages/lf20_FQrIpXFSRa.json"
+      background="transparent"
+      speed="1"
+      style="width:40px; height:40px;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- Encabezado con imagen -->
+  <header>
+    
+    <h1>Bienvenidos a <span class="brand">Ser Hablar</span></h1>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Info</a></li>
+        <li><a href="#servicios">Eventos</a></li>
+        <li><a href="#contacto">Contactame</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
-      <h1>Bienvenid@ a Gosia</h1>
-      <p>Esta es una página base creada con HTML, CSS y JavaScript. Modifícala a tu gusto.</p>
-      <a class="btn" href="#sobre">Saber más</a>
+    <section id="inicio">
+      <h2>Sobre nosotros</h2>
+      <p>Somos una empresa dedicada a ofrecer soluciones personalizadas para nuestros clientes.</p>
     </section>
 
-    <section id="sobre" class="section">
-      <h2>Sobre este sitio</h2>
-      <p>Empieza aquí para añadir tu contenido: proyectos, blog, portafolio o lo que quieras.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Proyecto 1</h3>
-          <p>Descripción breve del proyecto.</p>
-        </article>
-        <article class="card">
-          <h3>Proyecto 2</h3>
-          <p>Descripción breve del proyecto.</p>
-        </article>
+    <section id="servicios">
+      <h2>Nuestros servicios</h2>
+
+      <div class="servicio">
+        <h3>Servicio 1</h3>
+        <p>Descripción breve de este servicio.</p>
+      </div>
+
+      <div class="servicio">
+        <h3>Servicio 2</h3>
+        <p>Descripción breve de este servicio.</p>
       </div>
     </section>
 
-    <section id="contacto" class="section contact">
-      <h2>Contacto</h2>
-      <form id="contactForm">
-        <label>
-          Nombre
-          <input name="name" type="text" required />
-        </label>
-        <label>
-          Correo
-          <input name="email" type="email" required />
-        </label>
-        <label>
-          Mensaje
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Enviar</button>
+    <section id="eventos">
+      <h2>Eventos</h2>
+
+      <div class="eventos-galeria">
+        <div class="evento">
+          <img src="images/evento1.jpeg" alt="Evento 1" />
+          <p>Fiesta de lanzamiento 2025</p>
+        </div>
+
+        <div class="evento">
+          <img src="images/evento2.jpeg" alt="Evento 2" />
+          <p>Exposición de productos locales</p>
+        </div>
+
+        <div class="evento">
+          <img src="images/evento3.jpeg" alt="Evento 3" />
+          <p>Colaboración con artistas invitados</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form id="form-contacto">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
       </form>
-      <div id="formResult" aria-live="polite"></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Gosia — Hecho con ♥</p>
+  <footer>
+    <p>© 2025 ❤️ Ser Hablar. Todos los derechos reservados.</p>
   </footer>
 
   <script src="js/script.js"></script>
