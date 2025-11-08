@@ -2,7 +2,7 @@
    VARIABLES GLOBALES
    --------------------------- */
 :root{
-  --primary: #0d6efd;
+  --primary: #f16e03;
   --primary-dark: #0b5ed7;
   --white: #ffffff;
   --dark-3: #666;
@@ -25,7 +25,7 @@
 body{
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #0e0202;
   color: #333;
 }
 
@@ -38,7 +38,7 @@ body{
   overflow: hidden;
   /*background-color: var(--white);*/
   z-index: 2;
-  background-image: url(../images/fondo.jpg);
+  background-image: url('../images/foto de fondo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,13 +110,13 @@ body{
 
 .profile .profile-content .profile-card .profile-card-wrapper .card-content .card-title{
   font-size: 48px;
-  color: #fff;
+  color: #422103;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   margin-bottom: 20px;
 }
 
 .profile .profile-content .profile-card .profile-card-wrapper .card-content .text{
-  color: #fff;
+  color: #422103;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   padding-bottom: 20px;
 }
