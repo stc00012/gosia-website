@@ -308,3 +308,88 @@ footer{
   .eventos-galeria{ gap:12px; }
   .evento{ width: 100%; max-width: 420px; }
 }
+
+/* ===== Sección Futuros Eventos ===== */
+#futuros-eventos {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+#futuros-eventos h2 {
+  color: #ffdd57;
+  margin-bottom: 30px;
+}
+
+/* ===== Modal galería de evento ===== */
+.event-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+}
+
+.event-modal.open { display: flex; }
+
+.event-modal .modal-card {
+  width: 100%;
+  max-width: 940px;
+  background: #0f0f10;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  color: #fff;
+  animation: modal-pop .16s ease;
+}
+
+@keyframes modal-pop {
+  from { transform: translateY(8px) scale(.99); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.event-modal .modal-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.event-modal .modal-header h3 { margin:0; font-size:1.1rem; }
+.event-modal .modal-close {
+  background:transparent;
+  border:0;
+  color:#fff;
+  font-size:1.2rem;
+  cursor:pointer;
+  padding:6px;
+  border-radius:6px;
+}
+.event-modal .modal-close:hover { background: rgba(255,255,255,0.04); }
+
+.event-modal .modal-gallery {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
+}
+
+.event-modal .modal-gallery img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:8px;
+  display:block;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* Responsive: apila en móvil */
+@media (max-width:700px) {
+  .event-modal .modal-gallery { grid-template-columns: 1fr; }
+  .event-modal .modal-card { padding:14px; }
+  .event-modal .modal-gallery img { height:160px; }
+}
