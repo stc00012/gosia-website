@@ -25,7 +25,7 @@
 body{
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #0e0202;
+  background-color: #fa9f30;
   color: #333;
 }
 
@@ -223,7 +223,7 @@ nav ul{
   gap:20px;
 }
 nav ul li a{
-  color: #f59b9b;
+  color: #351201;
   text-decoration: none;
   font-weight: bold;
 }
@@ -236,7 +236,7 @@ main{
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
-  background: #181616;
+  background: #301601;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -364,7 +364,7 @@ footer{
 .event-modal .modal-close {
   background:transparent;
   border:0;
-  color:#fff;
+  color:#f8f6f3;
   font-size:1.2rem;
   cursor:pointer;
   padding:6px;
