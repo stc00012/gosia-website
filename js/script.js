@@ -2,7 +2,7 @@
 const form = document.getElementById("form-contacto");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Gracias por tu mensaje. Te responderemos pronto.");
+  alert("Dziękuję za wiadomość! Robię, co mogę, aby szybko odpowiedzieć.");
   form.reset();
 });
 
