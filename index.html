@@ -162,11 +162,17 @@
 
     <section id="contacto">
       <h2>Napisz do nas</h2>
-      <form id="form-contacto">
-        <input type="text" name="name" placeholder="Twoje imię" required />
-        <input type="email" name="email" placeholder="Twój adres e-mail" required />
-        <textarea name="message" placeholder="Twoja wiadomość" required></textarea>
-        <button type="submit">Enviar</button>
+      <form action="https://formspree.io/f/xrbrbjkj" method="POST">
+        <label for="nombre">Twoje imię:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="email">Twój adres e-mail:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="mensaje">Twoja wiadomość:</label>
+        <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+        <button type="submit">WYŚLIJ</button>
       </form>
     </section>
   </main>

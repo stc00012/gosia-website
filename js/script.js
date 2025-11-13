@@ -1,10 +1,10 @@
 // Validación básica de formulario
-const form = document.getElementById("form-contacto");
+/*const form = document.getElementById("form-contacto");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   alert("Dziękuję za wiadomość! Robię, co mogę, aby szybko odpowiedzieć.");
   form.reset();
-});
+});*/
 
 /* ===== Modal dinámico para eventos ===== */
 (function(){
